@@ -1,0 +1,3 @@
+facut tot textul neselectabil
+micsorat pozele si schimbat formatul
+completat meniul si datele rest

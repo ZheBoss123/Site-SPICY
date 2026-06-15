@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termeni și Condiții - Restaurant Spicy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --spicy-red: #8a0a0a; --gold: #D4AF37; --bg: #000; --text: #ddd; --glass-border: rgba(212, 175, 55, 0.3); }
+        
+        body { background-color: var(--bg); color: var(--text); font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; line-height: 1.8; }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* HEADER */
+        header { padding: 20px 0; border-bottom: 1px solid var(--glass-border); margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; }
+        .logo-text { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.5rem; text-decoration: none; font-weight: 700; }
+        .back-btn { color: #fff; text-decoration: none; border: 1px solid var(--gold); padding: 10px 25px; border-radius: 50px; transition: 0.3s; font-size: 0.85rem; text-transform: uppercase; }
+        .back-btn:hover { background: var(--gold); color: #000; }
+
+        /* TEXT */
+        h1 { font-family: 'Cinzel', serif; color: var(--gold); text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
+        h2 { font-family: 'Cinzel', serif; color: #fff; margin-top: 40px; border-left: 4px solid var(--gold); padding-left: 15px; font-size: 1.4rem; }
+        p { margin-bottom: 15px; text-align: justify; color: rgba(255,255,255,0.85); }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; color: rgba(255,255,255,0.85); }
+        
+        .highlight { color: var(--gold); font-weight: 700; }
+        
+        footer { text-align: center; margin-top: 60px; padding: 30px; border-top: 1px solid var(--glass-border); font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 20px; }
+            header { flex-direction: column; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo-text">SPICY RESTAURANT</a>
+            <a href="index.html" class="back-btn">← Înapoi acasă</a>
+        </header>
+
+        <h1>Termeni și Condiții</h1>
+
+        <p>Vă mulțumim că ați ales serviciile <strong>Restaurant Spicy</strong>. Utilizarea acestui site și plasarea comenzilor reprezintă acceptul dumneavoastră tacit al termenilor și condițiilor de mai jos.</p>
+
+        <h2>1. Identitatea Comerciantului</h2>
+        <p>Site-ul este administrat de societatea:</p>
+        <ul>
+            <li><strong>Nume Firmă:</strong> <span class="highlight">SC NORA SELECT SRL</span></li>
+            <li><strong>Cod Unic de Înregistrare (CUI):</strong> <span class="highlight">RO 34418068</span></li>
+            <li><strong>Nr. Reg. Comerțului:</strong> <span class="highlight">J4/434/27.04.2015</span></li>
+            <li><strong>Sediul Social:</strong> Strada Banca Națională 25, Bacău 600206</li>
+            <li><strong>Telefon:</strong> 0741 108 766</li>
+            <li><strong>Email:</strong> spicyrestbacau@gmail.com</li>
+        </ul>
+
+        <h2>2. Prețuri și Produse</h2>
+        <p>Toate prețurile afișate pe site sunt exprimate în RON și includ TVA conform legislației în vigoare. Imaginile produselor sunt cu titlu de prezentare. </p>
+        <p>Restaurant Spicy își rezervă dreptul de a modifica prețurile fără o notificare prealabilă, însă prețul final plătit de client este cel afișat în momentul confirmării comenzii (telefonic sau prin aplicații partenere).</p>
+
+        <h2>3. Alergeni și Informații Nutriționale</h2>
+        <p>Conform <strong>Ordinului ANPC 201/2022</strong>, informațiile detaliate despre ingrediente, gramaje, valori nutriționale și alergeni sunt disponibile în meniul nostru extins (format PDF) accesibil pe site sau fizic în locație.</p>
+        <p>Vă rugăm să informați personalul nostru cu privire la orice alergie sau intoleranță înainte de a comanda.</p>
+
+        <h2>4. Livrare și Plată</h2>
+        <p>Comenzile se pot efectua telefonic sau prin platformele partenere (Glovo). Plata se poate face numerar sau cu cardul la livrare/ridicare.</p>
+        <p>Timpul de livrare este estimativ și depinde de condițiile de trafic și volumul de comenzi din bucătărie.</p>
+
+        <h2>5. Politica de Retur și Anulare</h2>
+        <p>Conform OUG 34/2014, produsele alimentare sunt exceptate de la dreptul de retragere (retur), fiind produse care se pot deteriora rapid.</p>
+        <p>Returul este acceptat <strong>doar</strong> în cazul în care produsele sunt neconforme (greșite, deteriorate, alterate) la momentul recepției. Vă rugăm să verificați comanda în prezența curierului.</p>
+
+        <h2>6. Litigii</h2>
+        <p>Orice dispută va fi încercată a se rezolva pe cale amiabilă. Dacă acest lucru nu este posibil, litigiile vor fi soluționate de instanțele judecătorești competente din România.</p>
+
+        <footer>
+            &copy; 2026 SPICY PUB & RESTAURANT. Toate drepturile rezervate.
+        </footer>
+    </div>
+</body>
+</html>
