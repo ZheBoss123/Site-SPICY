@@ -2,21 +2,24 @@
 
 > Restaurant și Pub în Bacău (Strada Banca Națională 25), specializat în pizza cu aluat artizanal, paste italienești, fructe de mare, crispy de pui și organizare de evenimente private cu platouri calde și reci.
 
+## Pagini și Resurse Principale
+- [Pagina Principală Restaurant Spicy Bacău](https://spicybacau.ro/): Prezentare preparate, evenimente, recenzii și contact.
+- [Meniu Complet PDF](https://spicybacau.ro/menu.pdf): Lista completă de preparate, pizza, paste, fructe de mare și băuturi.
+- [Comandă Online prin Glovo](https://glovoapp.com/ro/ro/bacau/stores/spicy-bacau): Livrare rapidă la domiciliu în Bacău.
+
 ## Informații de Contact & Locație
 - **Adresă:** Strada Banca Națională 25, Bacău 600206, România
-- **Telefon Rezervări:** +40 741 108 766
+- **Telefon Rezervări:** +40 751 669 995
 - **Program:** Luni - Duminică: 10:00 - 23:30
-- **Rating Google Maps:** 4.7 / 5
-- **Livrare la domiciliu:** Disponibilă în Bacău prin Glovo (https://glovoapp.com/ro/ro/bacau/stores/spicy-bacau)
-- **Meniu complet PDF:** https://spicybacau.ro/menu.pdf
+- **Evaluare Google Maps:** 4.7 / 5
 
-## Specialități Principale din Meniu
-- **Pizza cu aluat artizanal:** Pizza Mississippi, Pizza Hot, Pizza White Truffle (cu cremă de trufe albe), Pizza Crudo e Rucola, Pizza Quattro Stagioni, Pizza Carbonara.
-- **Pizza pentru grupuri:** Pizza Maxi (special concepută pentru 4 persoane / grupuri de prieteni).
-- **Paste & Fructe de Mare:** Paste Carbonara (disponibile atât în variantă cremoasă cu sos alb, cât și după rețeta tradițională italiană), Tagliatelle / Paste cu Fructe de Mare (creveți, midii, calamari), Platouri Fritto Misto, Paste Quattro Formaggi.
-- **Pui & Grill:** Crispy Strips (piept de pui în crustă crocantă cu cartofi și sosuri), Chicken Parm (pui gratinat cu mozzarella și sos de roșii).
-- **Desert & Bar:** Clătite calde cu ciocolată și dulceață, cocktailuri alcoolice și non-alcoolice, bere rece, vinuri, limonade.
+## Specialități din Meniu
+- **Pizza cu aluat artizanal:** Pizza Mississippi, Pizza Hot, Pizza White Truffle, Pizza Crudo e Rucola, Pizza Quattro Stagioni, Pizza Carbonara și Pizza Maxi pentru prieteni.
+- **Paste & Fructe de Mare:** Paste Carbonara (atât în variantă cremoasă, cât și după rețeta tradițională italiană), Tagliatelle cu Fructe de Mare, Platouri Fritto Misto, Paste Quattro Formaggi.
+- **Crispy & Grill:** Crispy Strips din piept de pui, Chicken Parm gratinat cu mozzarella.
+- **Evenimente & Desert:** Platouri calde și reci pregătite integral artizanal pentru aniversări, majorate și mese festive, plus clătite calde cu ciocolată și dulceață.
 
-## Evenimente & Mese Festive în Bacău
-- Organizăm aniversări, onomastici, mese festive în familie și petreceri private sau corporate în Bacău.
-- Pregătim integral artizanal platouri calde și reci cu aperitive și feluri principale pentru grupuri.
+## Optional
+- [Termeni și Condiții](https://spicybacau.ro/termeni.html): Informații legale și condiții de utilizare.
+- [Politica de Confidențialitate](https://spicybacau.ro/confidentialitate.html): Detalii GDPR și protecția datelor.
+- [Politica Cookies](https://spicybacau.ro/cookies.html): Informații despre modulele cookie.
