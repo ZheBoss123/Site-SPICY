@@ -1,15 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://spicybacau.ro/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://spicybacau.ro/logo-restaurant-spicy-bacau.png</image:loc>
+      <image:title>Logo Restaurant &amp; Pub Spicy Bacău Centru</image:title>
+      <image:caption>Restaurant și Pub Spicy în centrul Bacăului, Strada Banca Națională 25</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/platouri-restaurant-spicy-bacau.jpg</image:loc>
+      <image:title>Specialități și Platouri Restaurant Spicy Bacău</image:title>
+      <image:caption>Pizza Crudo e Rucola, Tagliatelle cu Fructe de Mare și Salate proaspete la Restaurant Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/paste-carbonara-bacau.jpg</image:loc>
+      <image:title>Paste Carbonara Bacău - Restaurant Spicy</image:title>
+      <image:caption>Paste Carbonara în variantă cremoasă sau Clasică cu Guanciale și Pecorino în Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/pizza-crudo-e-rucola-bacau.jpg</image:loc>
+      <image:title>Pizza Crudo e Rucola Bacău - Aluat Artizanal</image:title>
+      <image:caption>Pizza Crudo e Rucola cu aluat artizanal, prosciutto crudo, rucola și parmezan la Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/crispy-strips-pui-bacau.jpg</image:loc>
+      <image:title>Crispy Strips &amp; Crispy Fingers de Pui Bacău</image:title>
+      <image:caption>Crispy de pui fraged în crustă aurie cu cartofi prăjiți și sos de usturoi la Restaurant Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/pizza-white-truffle-bacau.jpg</image:loc>
+      <image:title>Pizza White Truffle &amp; Tartufo Royale Bacău</image:title>
+      <image:caption>Pizza cu cremă de trufe albe, mozzarella, parmezan și pecorino pe aluat artizanal în Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/paste-fructe-de-mare-bacau.jpg</image:loc>
+      <image:title>Tagliatelle Con Frutti Di Mare - Paste cu Fructe de Mare Bacău</image:title>
+      <image:caption>Tagliatelle cu creveți, midii și calamari în sos mediteranean la Restaurant Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/pizza-mississippi-bacau.jpg</image:loc>
+      <image:title>Pizza Mississippi Bacău - Specialitatea Casei Spicy</image:title>
+      <image:caption>Pizza Mississippi cu aluat artizanal, bacon, piept de pui, salam și mozzarella la Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/pizza-hot-bacau.jpg</image:loc>
+      <image:title>Pizza Hot Picantă Bacău - Restaurant Spicy</image:title>
+      <image:caption>Pizza Hot cu salam picant, mozzarella și ardei iute pe aluat artizanal în centrul Bacăului</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/chicken-parm-bacau.jpg</image:loc>
+      <image:title>Chicken Parm Bacău - Piept de Pui Gratinat cu Mozzarella</image:title>
+      <image:caption>Chicken Parm gratinat la cuptor cu sos de roșii aromat, mozzarella și parmezan la Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/tigaie-picanta-bacau.jpg</image:loc>
+      <image:title>Tigaie Picantă Bacău - Restaurant Spicy</image:title>
+      <image:caption>Tigaie Picantă din ceafă de porc, kaiser, cârnăciori, ou ochi și ardei iute la Restaurant Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/organizare-evenimente-spicy-bacau.jpg</image:loc>
+      <image:title>Organizare Evenimente, Majorate și Aniversări în Bacău</image:title>
+      <image:caption>Sală amenajată pentru majorat și petrecere privată la Restaurant Spicy în centrul Bacăului</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/mese-festive-aniversari-bacau.jpg</image:loc>
+      <image:title>Majorate 18 Ani și Mese Festive în Bacău - Restaurant Spicy</image:title>
+      <image:caption>Decor festiv pentru majorat și aniversare organizată la Restaurant &amp; Pub Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/petreceri-private-majorate-bacau.jpg</image:loc>
+      <image:title>Platouri Calde și Reci pentru Evenimente și Majorate Bacău</image:title>
+      <image:caption>Platouri aperitive și feluri principale pregătite artizanal pentru petreceri private și majorate în Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/platouri-calde-reci-evenimente-bacau.jpg</image:loc>
+      <image:title>Mese Festive și Petreceri Private în Centrul Bacăului</image:title>
+      <image:caption>Aranjament sală pentru aniversări, majorate și mese festive în familie la Restaurant Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://spicybacau.ro/platouri-evenimente-majorate-bacau.jpg</image:loc>
+      <image:title>Petreceri Private, Shot-uri și Pub în Bacău</image:title>
+      <image:caption>Atmosferă de petrecere, shot-uri și distracție la Restaurant &amp; Pub Spicy Bacău</image:caption>
+      <image:geo_location>Bacău, România</image:geo_location>
+    </image:image>
   </url>
   <url>
     <loc>https://spicybacau.ro/menu.pdf</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://spicybacau.ro/termeni.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://spicybacau.ro/confidentialitate.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://spicybacau.ro/cookies.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

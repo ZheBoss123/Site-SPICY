@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politica de Cookie-uri - Restaurant Spicy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <title>Politica de Cookie-uri | Restaurant &amp; Pub Spicy Bacău</title>
+    <meta name="description" content="Politica de utilizare a modulelor cookie pe site-ul oficial Restaurant & Pub Spicy Bacău (spicybacau.ro).">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://spicybacau.ro/cookies.html">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo-restaurant-spicy-bacau.png">
+    <link rel="apple-touch-icon" href="logo-restaurant-spicy-bacau.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* --- STILURI IDENTICE CU SITE-UL PRINCIPAL --- */
         :root { 
             --spicy-red: #8a0a0a; 
             --gold: #D4AF37; 
@@ -15,23 +20,19 @@
             --text: #ddd; 
             --glass-border: rgba(212, 175, 55, 0.3);
         }
-
         body { 
             background-color: var(--bg); 
             color: var(--text); 
             font-family: 'Montserrat', sans-serif; 
             margin: 0; 
             padding: 0; 
-            line-height: 1.8; /* Citire usoara */
+            line-height: 1.8;
         }
-        
         .container { 
             max-width: 900px; 
             margin: 0 auto; 
             padding: 40px 20px; 
         }
-        
-        /* HEADER CU BUTON INAPOI */
         header { 
             padding: 20px 0; 
             border-bottom: 1px solid var(--glass-border); 
@@ -40,15 +41,16 @@
             justify-content: space-between; 
             align-items: center; 
         }
-        
+        .brand-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .brand-logo { width: 44px; height: 44px; object-fit: contain; }
         .logo-text { 
             font-family: 'Cinzel', serif; 
             color: var(--gold); 
-            font-size: 1.5rem; 
+            font-size: 1.4rem; 
             text-decoration: none; 
             font-weight: 700;
+            letter-spacing: 1px;
         }
-        
         .back-btn { 
             color: #fff; 
             text-decoration: none; 
@@ -59,14 +61,12 @@
             font-size: 0.85rem; 
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 600;
         }
-        
         .back-btn:hover { 
             background: var(--gold); 
             color: #000; 
         }
-
-        /* CONTINUT */
         h1 { 
             font-family: 'Cinzel', serif; 
             color: var(--gold); 
@@ -76,7 +76,6 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        
         h2 { 
             font-family: 'Cinzel', serif; 
             color: #fff; 
@@ -86,26 +85,21 @@
             border-left: 4px solid var(--gold); 
             padding-left: 15px; 
         }
-        
         p { 
             margin-bottom: 15px; 
             text-align: justify; 
             font-weight: 300;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.85);
         }
-        
         ul { 
             margin-bottom: 20px; 
             padding-left: 20px; 
         }
-        
         li { 
             margin-bottom: 10px; 
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.85);
         }
-        
         strong { color: #fff; font-weight: 600; }
-
         .table-custom {
             width: 100%;
             border-collapse: collapse;
@@ -121,7 +115,6 @@
             color: var(--gold);
             font-family: 'Cinzel', serif;
         }
-
         footer { 
             text-align: center; 
             margin-top: 80px; 
@@ -131,18 +124,21 @@
             color: rgba(255,255,255,0.5); 
             letter-spacing: 1px;
         }
-
         @media (max-width: 768px) {
             h1 { font-size: 1.8rem; }
             .container { padding: 20px; }
+            header { flex-direction: column; gap: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="logo-text">SPICY RESTAURANT</a>
-            <a href="index.html" class="back-btn">← Înapoi</a>
+            <a href="index.html" class="brand-wrap">
+                <img src="logo-restaurant-spicy-bacau.png" alt="Logo Restaurant Spicy Bacău" class="brand-logo" width="44" height="44">
+                <span class="logo-text">SPICY RESTAURANT</span>
+            </a>
+            <a href="index.html" class="back-btn">← Înapoi acasă</a>
         </header>
 
         <h1>Politica de Utilizare Cookie-uri</h1>
@@ -150,7 +146,7 @@
         <p>Prezenta politică se referă la cookie-urile și paginile web operate de <strong>Restaurant Spicy</strong>, cu sediul în Bacău, Str. Banca Națională 25.</p>
 
         <h2>1. Ce sunt Cookie-urile?</h2>
-        <p>Cookie-ul este un fișier de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este instalat prin solicitarea emisă de către un web-server unui browser (ex: Chrome, Safari, Firefox) și este complet "pasiv" (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard driver-ul utilizatorului).</p>
+        <p>Cookie-ul este un fișier de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este instalat prin solicitarea emisă de către un web-server unui browser (ex: Chrome, Safari, Firefox) și este complet „pasiv” (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard-disk-ul utilizatorului).</p>
 
         <h2>2. La ce sunt folosite Cookie-urile?</h2>
         <p>Aceste fișiere fac posibilă recunoașterea terminalului utilizatorului și prezentarea conținutului într-un mod relevant, adaptat preferințelor utilizatorului. Cookie-urile asigură utilizatorilor o experiență plăcută de navigare și susțin eforturile noastre pentru a oferi servicii confortabile utilizatorilor (ex: preferințele în materie de confidențialitate online).</p>
@@ -170,24 +166,23 @@
             </tr>
             <tr>
                 <td><strong>Strict Necesare</strong></td>
-                <td>Acestea sunt esențiale pentru navigarea pe site și utilizarea funcțiilor acestuia. Fără aceste cookie-uri, site-ul nu ar funcționa corect.</td>
+                <td>Acestea sunt esențiale pentru navigarea pe site și memorarea opțiunii privind consimțământul cookie. Fără aceste cookie-uri, site-ul nu ar funcționa corect.</td>
             </tr>
             <tr>
                 <td><strong>De Analiză (Statistici)</strong></td>
-                <td>Utilizăm servicii precum Google Analytics pentru a colecta informații despre modul în care vizitatorii utilizează site-ul nostru (număr vizitatori, pagini populare). Aceste date sunt anonime.</td>
+                <td>Utilizăm servicii precum Google Analytics / Search Console pentru a colecta informații anonime despre modul în care vizitatorii utilizează site-ul nostru.</td>
             </tr>
             <tr>
-                <td><strong>Marketing & Social Media</strong></td>
-                <td>Deoarece avem integrări cu platforme sociale (Facebook, Instagram, TikTok), acestea pot plasa cookie-uri pentru a vă arăta reclame relevante sau pentru a măsura eficiența campaniilor noastre.</td>
+                <td><strong>Hărți &amp; Integrări Terțe</strong></td>
+                <td>Harta interactivă Google Maps se încarcă doar la derularea în zona de contact pentru a vă afișa traseul către Strada Banca Națională 25, Bacău.</td>
             </tr>
         </table>
 
         <h2>5. Conțin Cookie-urile date personale?</h2>
-        <p>Cookie-urile în sine nu solicită informații cu caracter personal pentru a putea fi utilizate și, în cele mai multe cazuri, nu identifică personal utilizatorii de internet. Datele personale colectate prin utilizarea Cookie-urilor pot fi colectate doar pentru a facilita anumite funcționalități pentru utilizator.</p>
+        <p>Cookie-urile în sine nu solicită informații cu caracter personal pentru a putea fi utilizate și, în cele mai multe cazuri, nu identifică personal utilizatorii de internet.</p>
 
         <h2>6. Ștergerea Cookie-urilor</h2>
-        <p>În general, o aplicație folosită pentru accesarea paginilor web permite salvarea Cookie-urilor pe terminal în mod implicit. Aceste setări pot fi schimbate în așa fel încât administrarea automată a Cookie-urilor să fie blocată de browser-ul web sau utilizatorul să fie informat de fiecare dată când Cookie-uri sunt trimise către terminalul său.</p>
-        <p>Puteți gestiona cookie-urile din setările browserului dumneavoastră:</p>
+        <p>Puteți gestiona sau șterge cookie-urile oricând din setările browserului dumneavoastră:</p>
         <ul>
             <li>Google Chrome</li>
             <li>Mozilla Firefox</li>
@@ -196,10 +191,10 @@
         </ul>
 
         <h2>7. Securitate și confidențialitate</h2>
-        <p>Cookie-urile NU sunt viruși! Ele folosesc formate tip plain text. Nu sunt alcătuite din bucăți de cod așa că nu pot fi executate nici nu pot auto-rula. În consecință, nu se pot duplica sau replica pe alte rețele pentru a se rula sau replica din nou.</p>
+        <p>Cookie-urile NU sunt viruși! Ele folosesc formate tip plain text. Nu sunt alcătuite din bucăți de cod, așa că nu pot fi executate și nici nu pot auto-rula.</p>
 
         <footer>
-            &copy; 2026 SPICY PUB & RESTAURANT. Toate drepturile rezervate.<br>
+            &copy; 2026 SPICY PUB &amp; RESTAURANT BACĂU. Toate drepturile rezervate.<br>
             <span style="opacity: 0.6; font-size: 0.7rem;">Document actualizat conform legislației în vigoare.</span>
         </footer>
     </div>

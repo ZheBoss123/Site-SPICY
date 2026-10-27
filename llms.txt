@@ -1,25 +1,39 @@
-# Restaurant & Pub Spicy Bacău
+# Restaurant & Pub Spicy Bacău (Centru)
 
-> Restaurant și Pub în Bacău (Strada Banca Națională 25), specializat în pizza cu aluat artizanal, paste italienești, fructe de mare, crispy de pui și organizare de evenimente private cu platouri calde și reci.
+> Restaurant și Pub în centrul Bacăului (Strada Banca Națională 25, Bacău 600206), apreciat cu 4.7/5 pe Google Maps. Specializat în pizza cu aluat artizanal și Pizza Maxi (1.2 kg), paste italienești (Carbonara clasică cu guanciale sau cremoasă, Tagliatelle cu Fructe de Mare, Mac and Cheese), fructe de mare (Fritto Misto, Cioppino, Creveți Saganaki, Midii), burgeri de vită și crispy de pui, plus organizare de evenimente private, majorate și aniversări cu platouri calde și reci artizanale.
 
 ## Pagini și Resurse Principale
-- [Pagina Principală Restaurant Spicy Bacău](https://spicybacau.ro/): Prezentare preparate, evenimente, recenzii și contact.
-- [Meniu Complet PDF](https://spicybacau.ro/menu.pdf): Lista completă de preparate, pizza, paste, fructe de mare și băuturi.
-- [Comandă Online prin Glovo](https://glovoapp.com/ro/ro/bacau/stores/spicy-bacau): Livrare rapidă la domiciliu în Bacău.
+- [Pagina Principală Restaurant Spicy Bacău](https://spicybacau.ro/): Prezentare preparate, meniu cu prețuri și gramaje, evenimente & majorate, recenzii și întrebări frecvente.
+- [Meniu Complet PDF cu Gramaje și Prețuri](https://spicybacau.ro/menu.pdf): Lista completă de preparate și băuturi.
+- [Comandă Online cu Livrare prin Glovo](https://glovoapp.com/ro/ro/bacau/stores/spicy-bacau): Livrare rapidă la domiciliu în Bacău.
 
-## Informații de Contact & Locație
-- **Adresă:** Strada Banca Națională 25, Bacău 600206, România
-- **Telefon Rezervări:** +40 751 669 995
-- **Program:** Luni - Duminică: 10:00 - 23:30
-- **Evaluare Google Maps:** 4.7 / 5
+## Informații de Contact, Locație & Program
+- **Adresă:** Strada Banca Națională 25, Bacău 600206, România (Centru Bacău)
+- **Telefon Rezervări & Evenimente:** +40 751 669 995
+- **Program de Funcționare:** Luni – Duminică: 10:00 – 23:30
+- **Evaluare Google Maps:** 4.7 / 5 (peste 186 recenzii verificate)
 
-## Specialități din Meniu
-- **Pizza cu aluat artizanal:** Pizza Mississippi, Pizza Hot, Pizza White Truffle, Pizza Crudo e Rucola, Pizza Quattro Stagioni, Pizza Carbonara și Pizza Maxi pentru prieteni.
-- **Paste & Fructe de Mare:** Paste Carbonara (atât în variantă cremoasă, cât și după rețeta tradițională italiană), Tagliatelle cu Fructe de Mare, Platouri Fritto Misto, Paste Quattro Formaggi.
-- **Crispy & Grill:** Crispy Strips din piept de pui, Chicken Parm gratinat cu mozzarella.
-- **Evenimente & Desert:** Platouri calde și reci pregătite integral artizanal pentru aniversări, majorate și mese festive, plus clătite calde cu ciocolată și dulceață.
+## Meniu & Specialități Principale (Prețuri în RON)
+- **Pizza cu Aluat Artizanal (400g–600g) & Pizza Maxi (1200g pentru 4 persoane):**
+  - Pizza Mississippi (500g - 40 RON), Pizza Hot (500g - 38 RON), Pizza Crudo e Rucola (500g - 42 RON), Pizza White Truffle (400g - 42 RON), Pizza Tartufo Royale cu guanciale și trufe (500g - 52 RON), Pizza Quattro Stagioni (500g - 37 RON), Pizza Quattro Formaggi (500g - 42 RON), Pizza Carbonara (500g - 37 RON), Chicago Style Pizza (600g - 45 RON), Pizza Seafood (550g - 45 RON), Pizza Smoked Salmon (500g - 42 RON), Pizza Shrimp (500g - 42 RON).
+  - Pizza Maxi pentru grupuri (1200g / 4 persoane): Maxi Spicy (107 RON), Maxi Quattro e Quattro (115 RON), Maxi Super Delice (107 RON), Maxi Supremă (107 RON).
+- **Paste Italienești & Mac and Cheese (300g–550g):**
+  - Classic Carbonara cu guanciale și pecorino (400g - 45 RON), Paste Carbonara cremoase (400g - 37 RON), Tagliatelle Con Frutti Di Mare (500g - 53 RON), Tagliatelle cu Creveți (550g - 49 RON), Tagliatelle Al Tartufo cu cremă de trufe (400g - 46 RON), Tagliatelle cu Sos Alfredo (450g - 40 RON), Mac and Cheese (450g - 45 RON), Paste Quattro Formaggi (450g - 43 RON), Paste Gratinate la cuptor (450g - 38 RON), Penne Alla Vodka (300g - 32 RON), Tagliatelle Bolognese (400g - 40 RON).
+- **Fructe de Mare & Pește:**
+  - Platou Fritto Misto cu creveți și calamari (500g - 102 RON), Cioppino (580g - 63 RON), Creveți Saganaki cu feta (580g - 65 RON), Tempura Shrimp/Calamari (350g - 63 RON), Creveți în Sos de Smântână (400g - 53 RON), Midii în Sos Alb sau Sos Roșu (500g - 53 RON), Crispy Fish & Chips din șalău în crustă panko (450g - 50 RON), Fish Burger (550g - 52 RON), Somon la Cuptor, Biban la Grătar, Șalău la Grătar, Saramură de Crap (50 RON).
+- **Burgeri, Crispy de Pui, Porc & Vită:**
+  - Crispy Fingers din piept de pui cu cartofi și sos de usturoi (500g - 34 RON), Chicken Parm gratinat cu mozzarella (350g - 45 RON), Schnitzel Mississippi (400g - 43 RON), Schnitzel à la crème (500g - 53 RON).
+  - Burgeri: Spicy's Burger cu brânză de capră și dulceață de ardei iute (550g - 50 RON), Foie Gras & Truffle Burger (500g - 72 RON), Cheeseburger de vită (550g - 47 RON), Crispy Burger (450g - 40 RON).
+  - Porc & Vită: Tigaie Picantă cu ou ochi (500g - 45 RON), Coaste de Porc BBQ (600g - 58 RON), Pork Stroganoff (480g - 53 RON), Mușchiuleț de Vită cu Sos Dijon / Piper Verde / Gorgonzola (400g - 93 RON), Antricot de Vită cu Trufe.
+- **Mic Dejun, Gustări, Sandwich Focaccia & Salate:**
+  - Omletă Tradițională (25 RON), Italian Shakshuka (28 RON), King's Eggs (35 RON), Queen's Delight cu somon fumé (39 RON), Crudo Di Bosco (39 RON), Animal Style Fries (400g - 39 RON), Urs de Mămăligă (450g - 39 RON), Sandwich Focaccia (35–39 RON), Seafood Caesar Salad (52 RON), Chicken Caesar Salad (42 RON), Mediterranean Salad (48 RON).
+- **Deserturi Calde, Cocktailuri & Bar:**
+  - Clătite cu Ciocolată Nutella sau Dulceață (200g - 22 RON), Papanași cu Dulceață sau Ciocolată (200g - 30 RON), Colțunași cu Brânză (250g - 30 RON), Tiramisu Simplu sau cu Zmeură (150g - 32 RON).
+  - Cocktailuri Alcoolice & Non-Alcoolice (22–38 RON): Aperol Spritz, Hugo Spritz, Mojito, Negroni, Sex on the Beach, Pina Colada, Long Island Ice Tea, Tequila Sunrise, Cosmopolitan, Vinuri (Jidvei, Recaș, Domeniile Sâmburești, Prosecco) și Bere Rece.
+- **Evenimente, Majorate & Aniversări:**
+  - Organizăm majorate (18 ani), zile de naștere, onomastici, mese festive în familie și petreceri private în Bacău, cu platouri calde și reci artizanale, fântână de ciocolată cu fructe, Pizza Maxi și cocktail bar.
 
-## Optional
-- [Termeni și Condiții](https://spicybacau.ro/termeni.html): Informații legale și condiții de utilizare.
-- [Politica de Confidențialitate](https://spicybacau.ro/confidentialitate.html): Detalii GDPR și protecția datelor.
-- [Politica Cookies](https://spicybacau.ro/cookies.html): Informații despre modulele cookie.
+## Pagini Legale
+- [Termeni și Condiții](https://spicybacau.ro/termeni.html)
+- [Politica de Confidențialitate](https://spicybacau.ro/confidentialitate.html)
+- [Politica Cookies](https://spicybacau.ro/cookies.html)
