@@ -1839,11 +1839,15 @@
             }
             .btn-hero-primary, .btn-hero-secondary {
                 width: 100%;
-                padding: 14px 18px;
-                font-size: .84rem;
-                letter-spacing: 1.5px;
+                padding: 13px 14px;
+                font-size: .8rem;
+                letter-spacing: 1px;
                 text-align: center;
+                display: inline-flex;
+                align-items: center;
                 justify-content: center;
+                box-sizing: border-box;
+                line-height: 1.35;
             }
             .scroll-hint { display: none; }
             .sticky-nav {
@@ -1905,7 +1909,18 @@
             .spotlight-body { padding: 18px 16px 22px 16px; }
             .spotlight-title { font-size: clamp(1.2rem, 5vw, 1.55rem); letter-spacing: 1px; }
             .spotlight-desc { font-size: 1.05rem; line-height: 1.45; margin-bottom: 20px; }
-            .spotlight-actions a { width: 100%; text-align: center; }
+            .spotlight-actions a {
+                width: 100%;
+                padding: 13px 14px;
+                font-size: .78rem;
+                letter-spacing: 1px;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                line-height: 1.35;
+            }
             .menu-box { padding: 26px 14px; border-radius: 20px; margin: 0 10px; }
             .menu-text { font-size: .92rem; line-height: 1.6; margin-bottom: 24px; padding: 0 4px; }
             .highlights-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -1939,7 +1954,7 @@
                 color: #cfcfcf;
             }
             .events-banner-card {
-                padding: 20px 16px;
+                padding: 20px 14px;
                 text-align: center;
                 justify-content: center;
                 gap: 14px;
@@ -1947,8 +1962,34 @@
             }
             .events-banner-text h3 { font-size: 1.05rem; line-height: 1.3; margin-bottom: 6px; }
             .events-banner-text p { font-size: .82rem; line-height: 1.5; }
-            .events-banner-cta { width: 100%; padding: 12px 18px; font-size: .8rem; text-align: center; }
-            .btn-luxury { padding: 15px 22px; font-size: .84rem; width: 100%; letter-spacing: 2px; }
+            .events-banner-cta {
+                width: 100%;
+                max-width: 100%;
+                padding: 13px 12px;
+                font-size: .78rem;
+                letter-spacing: .8px;
+                line-height: 1.35;
+                white-space: normal;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 6px;
+                box-sizing: border-box;
+            }
+            .btn-luxury {
+                padding: 14px 12px;
+                font-size: .78rem;
+                width: 100%;
+                max-width: 100%;
+                letter-spacing: 1px;
+                line-height: 1.35;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+            }
             .reviews-header-badge {
                 padding: 8px 16px;
                 gap: 8px;
@@ -1990,19 +2031,26 @@
             .contact-grid { flex-direction: column; gap: 22px; align-items: center; text-align: center; }
             .contact-item { max-width: 100%; padding: 0 10px; }
             .contact-item h3 { font-size: .8rem; letter-spacing: 2px; margin-bottom: 8px; }
-            .contact-item p, .contact-item a { font-size: .88rem; line-height: 1.45; word-break: break-word; }
+            .contact-item p { font-size: .88rem; line-height: 1.45; word-break: break-word; }
+            .contact-item a.phone-link { font-size: 1.3rem !important; white-space: nowrap; display: inline-block; }
             .social-icons-footer { gap: 12px; }
             .social-btn-footer { width: 44px; height: 44px; font-size: 1.05rem; }
             .map-card { margin-top: 28px; border-radius: 16px; }
-            .map-card-header { padding: 12px 14px; flex-direction: column; gap: 4px; text-align: center; }
-            .map-card-header strong { font-size: .86rem; }
-            .map-card-header span { font-size: .74rem; }
+            .map-card-header { padding: 12px 14px; flex-direction: column; gap: 8px; text-align: center; }
+            .map-card-title { justify-content: center; text-align: center; line-height: 1.35; font-size: .82rem; }
             .map-frame-container { height: 220px; }
             .legal-section { margin-top: 24px; padding-top: 16px; }
             .legal-links { gap: 10px 14px; flex-wrap: wrap; justify-content: center; }
             .legal-links a { font-size: .74rem; }
             .copyright { font-size: .68rem; line-height: 1.4; margin-top: 12px; }
-            .mobile-action-bar { display: flex; }
+            .mobile-action-bar { display: flex; padding: 8px 10px; gap: 8px; }
+            .mobile-action-bar a {
+                font-size: .74rem;
+                letter-spacing: .3px;
+                padding: 11px 6px;
+                gap: 5px;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
@@ -2079,7 +2127,7 @@
 
             <div class="hero-actions">
                 <a href="menu.pdf" target="_blank" class="btn-hero-primary"><svg class="svg-icon" aria-hidden="true" style="margin-right: 8px;"><use href="#i-utensils"/></svg> Vezi Meniu Complet</a>
-                <a href="tel:+40751669995" class="btn-hero-secondary btn-velvet"><svg class="svg-icon" aria-hidden="true" style="margin-right: 8px;"><use href="#i-phone"/></svg> Rezervări: 0751 669 995</a>
+                <a href="tel:+40751669995" class="btn-hero-secondary btn-velvet"><svg class="svg-icon" aria-hidden="true" style="margin-right: 8px;"><use href="#i-phone"/></svg> Rezervări: 0751&nbsp;669&nbsp;995</a>
             </div>
 
             <a href="#platouri" class="scroll-hint" aria-label="Derulează la preparate"><svg class="svg-icon" aria-hidden="true"><use href="#i-down"/></svg></a>
@@ -2627,7 +2675,7 @@
                             La <strong>Restaurant &amp; Pub Spicy</strong> (Str. Banca Națională 25) pregătim integral artizanal <strong>platouri calde și reci</strong> cu aperitive și feluri principale, <strong>fântână de ciocolată cu fructe</strong>, <strong>Pizza Maxi</strong> și meniu de bar personalizat pentru grupul tău.
                         </p>
                     </div>
-                    <a href="tel:+40751669995" class="events-banner-cta btn-velvet"><svg class="svg-icon" aria-hidden="true" style="margin-right: 6px;"><use href="#i-phone"/></svg> Rezervă Eveniment: 0751 669 995</a>
+                    <a href="tel:+40751669995" class="events-banner-cta btn-velvet"><svg class="svg-icon" aria-hidden="true" style="margin-right: 6px;"><use href="#i-phone"/></svg> Rezervări: 0751&nbsp;669&nbsp;995</a>
                 </div>
 
                 <a href="menu.pdf" target="_blank" class="btn-luxury"><svg class="svg-icon" aria-hidden="true" style="margin-right: 10px;"><use href="#i-book"/></svg> Deschide Meniul Complet (PDF)</a>
@@ -2824,7 +2872,7 @@
                 <p class="spotlight-desc" id="spotlight-desc">Descriere preparat</p>
                 <div class="spotlight-actions">
                     <a href="menu.pdf" target="_blank" class="spot-btn-menu btn-hero-primary"><svg class="svg-icon" aria-hidden="true" style="margin-right: 6px;"><use href="#i-book"/></svg> Vezi Meniu PDF</a>
-                    <a href="tel:+40751669995" class="spot-btn-call btn-velvet"><svg class="svg-icon" aria-hidden="true" style="margin-right: 6px;"><use href="#i-phone"/></svg> Rezervă: 0751 669 995</a>
+                    <a href="tel:+40751669995" class="spot-btn-call btn-velvet"><svg class="svg-icon" aria-hidden="true" style="margin-right: 6px;"><use href="#i-phone"/></svg> Rezervă: 0751&nbsp;669&nbsp;995</a>
                 </div>
             </div>
         </div>
@@ -2902,7 +2950,7 @@
     </footer>
 
     <div class="mobile-action-bar">
-        <a href="tel:+40751669995" class="mob-btn-call"><svg class="svg-icon" aria-hidden="true"><use href="#i-phone"/></svg> Rezervă: 0751 669 995</a>
+        <a href="tel:+40751669995" class="mob-btn-call"><svg class="svg-icon" aria-hidden="true"><use href="#i-phone"/></svg> Sună: 0751&nbsp;669&nbsp;995</a>
         <a href="https://glovoapp.com/ro/ro/bacau/stores/spicy-bacau" target="_blank" rel="noopener" class="mob-btn-glovo btn-velvet"><svg class="svg-icon" aria-hidden="true"><use href="#i-moto"/></svg> Comandă Glovo</a>
     </div>
 
