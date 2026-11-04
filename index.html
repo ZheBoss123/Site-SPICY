@@ -39,11 +39,12 @@
     <link rel="icon" type="image/png" sizes="192x192" href="file1.png">
     <link rel="shortcut icon" type="image/png" href="file1.png">
     <link rel="apple-touch-icon" sizes="192x192" href="file1.png">
-    <link rel="preload" as="image" href="file1.png" fetchpriority="high">
+    <link rel="preload" as="image" href="file1.webp" type="image/webp" fetchpriority="high">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@400;500;600;700;800;900&display=swap">
     </noscript>
@@ -2060,6 +2061,20 @@
                 white-space: nowrap;
             }
         }
+
+        /* Mobile Performance: LCP Optimization - Instant Hero render without animation delay */
+        @media (max-width: 768px) {
+            .hero-title span,
+            .hero-subtitle,
+            .hero-specialties,
+            .hero-badges,
+            .hero-actions,
+            .hero-logo-wrap {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -2150,8 +2165,8 @@
 
             <div class="marquee">
                 <div class="marquee-content">
-                    <article class="card" onclick="openSpotlight(this)" data-category="Paste Italienești • 400g" data-title="Paste Carbonara (Clasice sau Cremoase)" data-desc="Pregătite pe loc în porții generoase de 400g: disponibile atât în varianta cremoasă cu bacon, gran cucina și parmezan (37 LEI), cât și Classic Carbonara după rețeta tradițională italiană cu guanciale și pecorino (45 LEI)." data-img="paste-carbonara-bacau.jpg">
-                        <img src="paste-carbonara-bacau.jpg" alt="Paste Carbonara Cremoase și Classic Carbonara cu Guanciale - Restaurant Spicy Bacău" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Paste Italienești • 400g" data-title="Paste Carbonara (Clasice sau Cremoase)" data-desc="Pregătite pe loc în porții generoase de 400g: disponibile atât în varianta cremoasă cu bacon, gran cucina și parmezan (37 LEI), cât și Classic Carbonara după rețeta tradițională italiană cu guanciale și pecorino (45 LEI)." data-img="paste-carbonara-bacau.webp">
+                        <img src="paste-carbonara-bacau.webp" alt="Paste Carbonara Cremoase și Classic Carbonara cu Guanciale - Restaurant Spicy Bacău" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">37 / 45 LEI • 400g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2162,8 +2177,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Crudo e Rucola" data-desc="Aluat artizanal dospit lent (500g), sos de roșii, mozzarella fresca, felii generoase de prosciutto crudo, roșii cherry, rucola proaspătă și fulgi de parmezan (42 LEI)." data-img="pizza-crudo-e-rucola-bacau.jpg">
-                        <img src="pizza-crudo-e-rucola-bacau.jpg" alt="Pizza Crudo e Rucola cu aluat artizanal și prosciutto crudo în Bacău" class="card-img" width="840" height="562" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Crudo e Rucola" data-desc="Aluat artizanal dospit lent (500g), sos de roșii, mozzarella fresca, felii generoase de prosciutto crudo, roșii cherry, rucola proaspătă și fulgi de parmezan (42 LEI)." data-img="pizza-crudo-e-rucola-bacau.webp">
+                        <img src="pizza-crudo-e-rucola-bacau.webp" alt="Pizza Crudo e Rucola cu aluat artizanal și prosciutto crudo în Bacău" class="card-img" width="840" height="562" loading="lazy" decoding="async">
                         <span class="card-badge-top">42 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2174,8 +2189,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Crispy &amp; Grill • 500g" data-title="Crispy Fingers &amp; Strips de Pui" data-desc="Fâșii fragede din piept de pui în crustă aurie crocantă (500g), pregătite pe loc și servite alături de cartofi prăjiți și sos cremos de usturoi (34 LEI)." data-img="crispy-strips-pui-bacau.jpg">
-                        <img src="crispy-strips-pui-bacau.jpg" alt="Crispy Strips și Crispy Fingers din piept de pui cu cartofi în Bacău" class="card-img" width="840" height="557" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Crispy &amp; Grill • 500g" data-title="Crispy Fingers &amp; Strips de Pui" data-desc="Fâșii fragede din piept de pui în crustă aurie crocantă (500g), pregătite pe loc și servite alături de cartofi prăjiți și sos cremos de usturoi (34 LEI)." data-img="crispy-strips-pui-bacau.webp">
+                        <img src="crispy-strips-pui-bacau.webp" alt="Crispy Strips și Crispy Fingers din piept de pui cu cartofi în Bacău" class="card-img" width="840" height="557" loading="lazy" decoding="async">
                         <span class="card-badge-top">34 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2186,8 +2201,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 400g–500g" data-title="Pizza White Truffle &amp; Tartufo Royale" data-desc="O combinație rafinată de cremă aromată de trufe, ciuperci, mozzarella, parmezan și pecorino pe aluat artizanal rumenit (White Truffle 42 LEI / Tartufo Royale cu guanciale 52 LEI)." data-img="pizza-white-truffle-bacau.jpg">
-                        <img src="pizza-white-truffle-bacau.jpg" alt="Pizza White Truffle cu cremă de trufe albe și brânzeturi fine în Bacău" class="card-img" width="840" height="561" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 400g–500g" data-title="Pizza White Truffle &amp; Tartufo Royale" data-desc="O combinație rafinată de cremă aromată de trufe, ciuperci, mozzarella, parmezan și pecorino pe aluat artizanal rumenit (White Truffle 42 LEI / Tartufo Royale cu guanciale 52 LEI)." data-img="pizza-white-truffle-bacau.webp">
+                        <img src="pizza-white-truffle-bacau.webp" alt="Pizza White Truffle cu cremă de trufe albe și brânzeturi fine în Bacău" class="card-img" width="840" height="561" loading="lazy" decoding="async">
                         <span class="card-badge-top">42 LEI • 400g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2198,8 +2213,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Paste &amp; Fructe de Mare • 500g" data-title="Tagliatelle Con Frutti Di Mare" data-desc="Paste Tagliatelle gătite cu fructe de mare (creveți, midii, calamari - 500g) în sos mediteranean aromat cu roșii cherry, usturoi, ulei de măsline, verdeață și lime (53 LEI)." data-img="paste-fructe-de-mare-bacau.jpg">
-                        <img src="paste-fructe-de-mare-bacau.jpg" alt="Tagliatelle Con Frutti Di Mare - Paste cu Fructe de Mare în Bacău" class="card-img" width="840" height="556" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Paste &amp; Fructe de Mare • 500g" data-title="Tagliatelle Con Frutti Di Mare" data-desc="Paste Tagliatelle gătite cu fructe de mare (creveți, midii, calamari - 500g) în sos mediteranean aromat cu roșii cherry, usturoi, ulei de măsline, verdeață și lime (53 LEI)." data-img="paste-fructe-de-mare-bacau.webp">
+                        <img src="paste-fructe-de-mare-bacau.webp" alt="Tagliatelle Con Frutti Di Mare - Paste cu Fructe de Mare în Bacău" class="card-img" width="840" height="556" loading="lazy" decoding="async">
                         <span class="card-badge-top">53 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2210,8 +2225,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Mississippi" data-desc="Una dintre cele mai îndrăgite specialități Spicy (500g): aluat artizanal, sos de roșii, bacon, piept de pui, salam, mozzarella din belșug, porumb, ardei și ou (40 LEI)." data-img="pizza-mississippi-bacau.jpg">
-                        <img src="pizza-mississippi-bacau.jpg" alt="Pizza Mississippi cu aluat artizanal - Specialitatea Restaurant Spicy Bacău" class="card-img" width="840" height="555" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Mississippi" data-desc="Una dintre cele mai îndrăgite specialități Spicy (500g): aluat artizanal, sos de roșii, bacon, piept de pui, salam, mozzarella din belșug, porumb, ardei și ou (40 LEI)." data-img="pizza-mississippi-bacau.webp">
+                        <img src="pizza-mississippi-bacau.webp" alt="Pizza Mississippi cu aluat artizanal - Specialitatea Restaurant Spicy Bacău" class="card-img" width="840" height="555" loading="lazy" decoding="async">
                         <span class="card-badge-top">40 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2222,8 +2237,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Hot Picantă" data-desc="Creată pentru cei care iubesc gustul intens și picant (500g): aluat artizanal, sos de roșii, mozzarella topită, salam picant 150g și ardei iute (38 LEI)." data-img="pizza-hot-bacau.jpg">
-                        <img src="pizza-hot-bacau.jpg" alt="Pizza Hot Picantă cu salam picant și mozzarella în Bacău" class="card-img" width="840" height="560" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Hot Picantă" data-desc="Creată pentru cei care iubesc gustul intens și picant (500g): aluat artizanal, sos de roșii, mozzarella topită, salam picant 150g și ardei iute (38 LEI)." data-img="pizza-hot-bacau.webp">
+                        <img src="pizza-hot-bacau.webp" alt="Pizza Hot Picantă cu salam picant și mozzarella în Bacău" class="card-img" width="840" height="560" loading="lazy" decoding="async">
                         <span class="card-badge-top">38 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2234,8 +2249,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Specialitate Pui • 350g" data-title="Chicken Parm Gratinat" data-desc="Piept de pui fraged (250g) în crustă aurie, gratinat la cuptor cu sos de roșii aromat, mozzarella topită, parmezan și verdeață (350g - 45 LEI)." data-img="chicken-parm-bacau.jpg">
-                        <img src="chicken-parm-bacau.jpg" alt="Chicken Parm - Piept de pui gratinat cu mozzarella și parmezan la Spicy Bacău" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Specialitate Pui • 350g" data-title="Chicken Parm Gratinat" data-desc="Piept de pui fraged (250g) în crustă aurie, gratinat la cuptor cu sos de roșii aromat, mozzarella topită, parmezan și verdeață (350g - 45 LEI)." data-img="chicken-parm-bacau.webp">
+                        <img src="chicken-parm-bacau.webp" alt="Chicken Parm - Piept de pui gratinat cu mozzarella și parmezan la Spicy Bacău" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">45 LEI • 350g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2246,8 +2261,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Specialitate Porc • 500g" data-title="Tigaie Picantă cu Ou Ochi" data-desc="Porție sățioasă de 500g pregătită pe loc din ceafă de porc fragedă (300g), kaiser, cârnăciori, ardei gras, usturoi, cimbru, vin, ardei iute și ou ochi deasupra (45 LEI)." data-img="tigaie-picanta-bacau.jpg">
-                        <img src="tigaie-picanta-bacau.jpg" alt="Tigaie Picantă de porc cu cârnăciori și ou ochi la Restaurant Spicy Bacău" class="card-img" width="840" height="555" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Specialitate Porc • 500g" data-title="Tigaie Picantă cu Ou Ochi" data-desc="Porție sățioasă de 500g pregătită pe loc din ceafă de porc fragedă (300g), kaiser, cârnăciori, ardei gras, usturoi, cimbru, vin, ardei iute și ou ochi deasupra (45 LEI)." data-img="tigaie-picanta-bacau.webp">
+                        <img src="tigaie-picanta-bacau.webp" alt="Tigaie Picantă de porc cu cârnăciori și ou ochi la Restaurant Spicy Bacău" class="card-img" width="840" height="555" loading="lazy" decoding="async">
                         <span class="card-badge-top">45 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2258,8 +2273,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Masă cu Prietenii • Centru Bacău" data-title="Specialități &amp; Platouri Spicy" data-desc="Fie că ieși cu prietenii în centrul Bacăului la o Pizza Maxi (1200g), un platou Fritto Misto cu fructe de mare sau salate proaspete (Seafood Caesar, Mediterranean), la Spicy găsești mereu porții generoase." data-img="platouri-restaurant-spicy-bacau.jpg">
-                        <img src="platouri-restaurant-spicy-bacau.jpg" alt="Masă cu Pizza Crudo e Rucola, Paste cu Fructe de Mare și Salate la Restaurant Spicy Bacău" class="card-img" width="840" height="561" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Masă cu Prietenii • Centru Bacău" data-title="Specialități &amp; Platouri Spicy" data-desc="Fie că ieși cu prietenii în centrul Bacăului la o Pizza Maxi (1200g), un platou Fritto Misto cu fructe de mare sau salate proaspete (Seafood Caesar, Mediterranean), la Spicy găsești mereu porții generoase." data-img="platouri-restaurant-spicy-bacau.webp">
+                        <img src="platouri-restaurant-spicy-bacau.webp" alt="Masă cu Pizza Crudo e Rucola, Paste cu Fructe de Mare și Salate la Restaurant Spicy Bacău" class="card-img" width="840" height="561" loading="lazy" decoding="async">
                         <span class="card-badge-top">Specialități Spicy</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2271,80 +2286,80 @@
                     </article>
 
                     <!-- Dublură pentru buclă continuă -->
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Paste Italienești • 400g" data-title="Paste Carbonara (Clasice sau Cremoase)" data-desc="Pregătite pe loc în porții generoase de 400g: disponibile atât în varianta cremoasă cu bacon, gran cucina și parmezan (37 LEI), cât și Classic Carbonara după rețeta tradițională italiană cu guanciale și pecorino (45 LEI)." data-img="paste-carbonara-bacau.jpg">
-                        <img src="paste-carbonara-bacau.jpg" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Paste Italienești • 400g" data-title="Paste Carbonara (Clasice sau Cremoase)" data-desc="Pregătite pe loc în porții generoase de 400g: disponibile atât în varianta cremoasă cu bacon, gran cucina și parmezan (37 LEI), cât și Classic Carbonara după rețeta tradițională italiană cu guanciale și pecorino (45 LEI)." data-img="paste-carbonara-bacau.webp">
+                        <img src="paste-carbonara-bacau.webp" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">37 / 45 LEI • 400g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Paste Carbonara</h3><p>Variantă cremoasă sau rețetă clasică cu guanciale</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Crudo e Rucola" data-desc="Aluat artizanal dospit lent (500g), sos de roșii, mozzarella fresca, felii generoase de prosciutto crudo, roșii cherry, rucola proaspătă și fulgi de parmezan (42 LEI)." data-img="pizza-crudo-e-rucola-bacau.jpg">
-                        <img src="pizza-crudo-e-rucola-bacau.jpg" alt="" class="card-img" width="840" height="562" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Crudo e Rucola" data-desc="Aluat artizanal dospit lent (500g), sos de roșii, mozzarella fresca, felii generoase de prosciutto crudo, roșii cherry, rucola proaspătă și fulgi de parmezan (42 LEI)." data-img="pizza-crudo-e-rucola-bacau.webp">
+                        <img src="pizza-crudo-e-rucola-bacau.webp" alt="" class="card-img" width="840" height="562" loading="lazy" decoding="async">
                         <span class="card-badge-top">42 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Pizza Crudo e Rucola</h3><p>Aluat artizanal, prosciutto crudo, rucola și parmezan</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Crispy &amp; Grill • 500g" data-title="Crispy Fingers &amp; Strips de Pui" data-desc="Fâșii fragede din piept de pui în crustă aurie crocantă (500g), pregătite pe loc și servite alături de cartofi prăjiți și sos cremos de usturoi (34 LEI)." data-img="crispy-strips-pui-bacau.jpg">
-                        <img src="crispy-strips-pui-bacau.jpg" alt="" class="card-img" width="840" height="557" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Crispy &amp; Grill • 500g" data-title="Crispy Fingers &amp; Strips de Pui" data-desc="Fâșii fragede din piept de pui în crustă aurie crocantă (500g), pregătite pe loc și servite alături de cartofi prăjiți și sos cremos de usturoi (34 LEI)." data-img="crispy-strips-pui-bacau.webp">
+                        <img src="crispy-strips-pui-bacau.webp" alt="" class="card-img" width="840" height="557" loading="lazy" decoding="async">
                         <span class="card-badge-top">34 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Crispy Strips de Pui</h3><p>Piept de pui în crustă aurie, cartofi și sos de usturoi</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 400g–500g" data-title="Pizza White Truffle &amp; Tartufo Royale" data-desc="O combinație rafinată de cremă aromată de trufe, ciuperci, mozzarella, parmezan și pecorino pe aluat artizanal rumenit (White Truffle 42 LEI / Tartufo Royale cu guanciale 52 LEI)." data-img="pizza-white-truffle-bacau.jpg">
-                        <img src="pizza-white-truffle-bacau.jpg" alt="" class="card-img" width="840" height="561" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 400g–500g" data-title="Pizza White Truffle &amp; Tartufo Royale" data-desc="O combinație rafinată de cremă aromată de trufe, ciuperci, mozzarella, parmezan și pecorino pe aluat artizanal rumenit (White Truffle 42 LEI / Tartufo Royale cu guanciale 52 LEI)." data-img="pizza-white-truffle-bacau.webp">
+                        <img src="pizza-white-truffle-bacau.webp" alt="" class="card-img" width="840" height="561" loading="lazy" decoding="async">
                         <span class="card-badge-top">42 LEI • 400g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Pizza White Truffle</h3><p>Cremă de trufe, pecorino, parmezan și mozzarella</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Paste &amp; Fructe de Mare • 500g" data-title="Tagliatelle Con Frutti Di Mare" data-desc="Paste Tagliatelle gătite cu fructe de mare (creveți, midii, calamari - 500g) în sos mediteranean aromat cu roșii cherry, usturoi, ulei de măsline, verdeață și lime (53 LEI)." data-img="paste-fructe-de-mare-bacau.jpg">
-                        <img src="paste-fructe-de-mare-bacau.jpg" alt="" class="card-img" width="840" height="556" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Paste &amp; Fructe de Mare • 500g" data-title="Tagliatelle Con Frutti Di Mare" data-desc="Paste Tagliatelle gătite cu fructe de mare (creveți, midii, calamari - 500g) în sos mediteranean aromat cu roșii cherry, usturoi, ulei de măsline, verdeață și lime (53 LEI)." data-img="paste-fructe-de-mare-bacau.webp">
+                        <img src="paste-fructe-de-mare-bacau.webp" alt="" class="card-img" width="840" height="556" loading="lazy" decoding="async">
                         <span class="card-badge-top">53 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Paste cu Fructe de Mare</h3><p>Tagliatelle cu creveți, midii și calamari în sos aromat</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Mississippi" data-desc="Una dintre cele mai îndrăgite specialități Spicy (500g): aluat artizanal, sos de roșii, bacon, piept de pui, salam, mozzarella din belșug, porumb, ardei și ou (40 LEI)." data-img="pizza-mississippi-bacau.jpg">
-                        <img src="pizza-mississippi-bacau.jpg" alt="" class="card-img" width="840" height="555" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Mississippi" data-desc="Una dintre cele mai îndrăgite specialități Spicy (500g): aluat artizanal, sos de roșii, bacon, piept de pui, salam, mozzarella din belșug, porumb, ardei și ou (40 LEI)." data-img="pizza-mississippi-bacau.webp">
+                        <img src="pizza-mississippi-bacau.webp" alt="" class="card-img" width="840" height="555" loading="lazy" decoding="async">
                         <span class="card-badge-top">40 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Pizza Mississippi</h3><p>Specialitatea casei cu aluat artizanal și ingrediente bogate</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Hot Picantă" data-desc="Creată pentru cei care iubesc gustul intens și picant (500g): aluat artizanal, sos de roșii, mozzarella topită, salam picant 150g și ardei iute (38 LEI)." data-img="pizza-hot-bacau.jpg">
-                        <img src="pizza-hot-bacau.jpg" alt="" class="card-img" width="840" height="560" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pizza Artizanală • 500g" data-title="Pizza Hot Picantă" data-desc="Creată pentru cei care iubesc gustul intens și picant (500g): aluat artizanal, sos de roșii, mozzarella topită, salam picant 150g și ardei iute (38 LEI)." data-img="pizza-hot-bacau.webp">
+                        <img src="pizza-hot-bacau.webp" alt="" class="card-img" width="840" height="560" loading="lazy" decoding="async">
                         <span class="card-badge-top">38 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Pizza Hot</h3><p>Salam picant, mozzarella și ardei iute pe aluat artizanal</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Specialitate Pui • 350g" data-title="Chicken Parm Gratinat" data-desc="Piept de pui fraged (250g) în crustă aurie, gratinat la cuptor cu sos de roșii aromat, mozzarella topită, parmezan și verdeață (350g - 45 LEI)." data-img="chicken-parm-bacau.jpg">
-                        <img src="chicken-parm-bacau.jpg" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Specialitate Pui • 350g" data-title="Chicken Parm Gratinat" data-desc="Piept de pui fraged (250g) în crustă aurie, gratinat la cuptor cu sos de roșii aromat, mozzarella topită, parmezan și verdeață (350g - 45 LEI)." data-img="chicken-parm-bacau.webp">
+                        <img src="chicken-parm-bacau.webp" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">45 LEI • 350g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Chicken Parm</h3><p>Piept de pui gratinat la cuptor cu mozzarella și parmezan</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Specialitate Porc • 500g" data-title="Tigaie Picantă cu Ou Ochi" data-desc="Porție sățioasă de 500g pregătită pe loc din ceafă de porc fragedă (300g), kaiser, cârnăciori, ardei gras, usturoi, cimbru, vin, ardei iute și ou ochi deasupra (45 LEI)." data-img="tigaie-picanta-bacau.jpg">
-                        <img src="tigaie-picanta-bacau.jpg" alt="" class="card-img" width="840" height="555" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Specialitate Porc • 500g" data-title="Tigaie Picantă cu Ou Ochi" data-desc="Porție sățioasă de 500g pregătită pe loc din ceafă de porc fragedă (300g), kaiser, cârnăciori, ardei gras, usturoi, cimbru, vin, ardei iute și ou ochi deasupra (45 LEI)." data-img="tigaie-picanta-bacau.webp">
+                        <img src="tigaie-picanta-bacau.webp" alt="" class="card-img" width="840" height="555" loading="lazy" decoding="async">
                         <span class="card-badge-top">45 LEI • 500g</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Tigaie Picantă</h3><p>Ceafă de porc, kaiser, cârnăciori, sos de vin și ou ochi</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Masă cu Prietenii • Centru Bacău" data-title="Specialități &amp; Platouri Spicy" data-desc="Fie că ieși cu prietenii în centrul Bacăului la o Pizza Maxi (1200g), un platou Fritto Misto cu fructe de mare sau salate proaspete (Seafood Caesar, Mediterranean), la Spicy găsești mereu porții generoase." data-img="platouri-restaurant-spicy-bacau.jpg">
-                        <img src="platouri-restaurant-spicy-bacau.jpg" alt="" class="card-img" width="840" height="561" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Masă cu Prietenii • Centru Bacău" data-title="Specialități &amp; Platouri Spicy" data-desc="Fie că ieși cu prietenii în centrul Bacăului la o Pizza Maxi (1200g), un platou Fritto Misto cu fructe de mare sau salate proaspete (Seafood Caesar, Mediterranean), la Spicy găsești mereu porții generoase." data-img="platouri-restaurant-spicy-bacau.webp">
+                        <img src="platouri-restaurant-spicy-bacau.webp" alt="" class="card-img" width="840" height="561" loading="lazy" decoding="async">
                         <span class="card-badge-top">Specialități Spicy</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Platouri &amp; Specialități</h3><p>Pizza artizanală, fructe de mare și salate proaspete</p></div>
@@ -2364,8 +2379,8 @@
 
             <div class="marquee reverse">
                 <div class="marquee-content">
-                    <article class="card" onclick="openSpotlight(this)" data-category="Evenimente &amp; Majorate Bacău" data-title="Organizare Majorate &amp; Aniversări" data-desc="Sală spațioasă în centrul Bacăului (Str. Banca Națională 25) amenajată festiv pentru majorate, zile de naștere și petreceri private cu meniu personalizat și platouri artizanale." data-img="organizare-evenimente-spicy-bacau.jpg">
-                        <img src="organizare-evenimente-spicy-bacau.jpg" alt="Organizare evenimente, majorate și petreceri private la Restaurant Spicy Bacău" class="card-img" width="840" height="562" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Evenimente &amp; Majorate Bacău" data-title="Organizare Majorate &amp; Aniversări" data-desc="Sală spațioasă în centrul Bacăului (Str. Banca Națională 25) amenajată festiv pentru majorate, zile de naștere și petreceri private cu meniu personalizat și platouri artizanale." data-img="organizare-evenimente-spicy-bacau.webp">
+                        <img src="organizare-evenimente-spicy-bacau.webp" alt="Organizare evenimente, majorate și petreceri private la Restaurant Spicy Bacău" class="card-img" width="840" height="562" loading="lazy" decoding="async">
                         <span class="card-badge-top">Majorate &amp; Evenimente</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2376,8 +2391,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Petreceri 18 Ani • Bacău" data-title="Decor &amp; Atmosferă de Majorat" data-desc="Transformăm majoratul sau aniversarea ta într-o amintire de neuitat: spațiu pentru foto-corner, sonorizare/DJ, mese festive, platouri calde și reci și servire impecabilă." data-img="mese-festive-aniversari-bacau.jpg">
-                        <img src="mese-festive-aniversari-bacau.jpg" alt="Decor majorat 18 ani și mese festive aniversări în Bacău la Restaurant Spicy" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Petreceri 18 Ani • Bacău" data-title="Decor &amp; Atmosferă de Majorat" data-desc="Transformăm majoratul sau aniversarea ta într-o amintire de neuitat: spațiu pentru foto-corner, sonorizare/DJ, mese festive, platouri calde și reci și servire impecabilă." data-img="mese-festive-aniversari-bacau.webp">
+                        <img src="mese-festive-aniversari-bacau.webp" alt="Decor majorat 18 ani și mese festive aniversări în Bacău la Restaurant Spicy" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">Aniversări &amp; 18 Ani</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2388,8 +2403,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Platouri Artizanale • Evenimente" data-title="Platouri Calde și Reci Artizanale" data-desc="Pregătim integral în bucătăria noastră platouri bogate cu aperitive calde și reci, bulete de cașcaval, chifteluțe, rulouri și feluri principale pentru invitații tăi." data-img="petreceri-private-majorate-bacau.jpg">
-                        <img src="petreceri-private-majorate-bacau.jpg" alt="Platouri calde și reci cu aperitive pentru evenimente și majorate în Bacău" class="card-img" width="840" height="563" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Platouri Artizanale • Evenimente" data-title="Platouri Calde și Reci Artizanale" data-desc="Pregătim integral în bucătăria noastră platouri bogate cu aperitive calde și reci, bulete de cașcaval, chifteluțe, rulouri și feluri principale pentru invitații tăi." data-img="petreceri-private-majorate-bacau.webp">
+                        <img src="petreceri-private-majorate-bacau.webp" alt="Platouri calde și reci cu aperitive pentru evenimente și majorate în Bacău" class="card-img" width="840" height="563" loading="lazy" decoding="async">
                         <span class="card-badge-top">Platouri Artizanale</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2400,8 +2415,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Mese Festive • Familie &amp; Grupuri" data-title="Mese Festive &amp; Petreceri Private" data-desc="Locul ideal din centrul Bacăului pentru onomastici, botezuri restrânse, banchete, mese în familie sau petreceri corporate cu servire impecabilă." data-img="platouri-calde-reci-evenimente-bacau.jpg">
-                        <img src="platouri-calde-reci-evenimente-bacau.jpg" alt="Sală pentru mese festive, aniversări și evenimente private în Bacău" class="card-img" width="840" height="560" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Mese Festive • Familie &amp; Grupuri" data-title="Mese Festive &amp; Petreceri Private" data-desc="Locul ideal din centrul Bacăului pentru onomastici, botezuri restrânse, banchete, mese în familie sau petreceri corporate cu servire impecabilă." data-img="platouri-calde-reci-evenimente-bacau.webp">
+                        <img src="platouri-calde-reci-evenimente-bacau.webp" alt="Sală pentru mese festive, aniversări și evenimente private în Bacău" class="card-img" width="840" height="560" loading="lazy" decoding="async">
                         <span class="card-badge-top">Mese Festive</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2412,8 +2427,8 @@
                         </div>
                     </article>
 
-                    <article class="card" onclick="openSpotlight(this)" data-category="Pub &amp; Party • Bacău" data-title="Petreceri cu Prietenii &amp; Shot-uri" data-desc="Atmosferă autentică de pub și petrecere în inima Bacăului: platouri de shot-uri, bere rece și distracție alături de prieteni." data-img="platouri-evenimente-majorate-bacau.jpg">
-                        <img src="platouri-evenimente-majorate-bacau.jpg" alt="Petreceri private, majorate și shot-uri la Spicy Pub Bacău" class="card-img" width="840" height="438" loading="lazy" decoding="async">
+                    <article class="card" onclick="openSpotlight(this)" data-category="Pub &amp; Party • Bacău" data-title="Petreceri cu Prietenii &amp; Shot-uri" data-desc="Atmosferă autentică de pub și petrecere în inima Bacăului: platouri de shot-uri, bere rece și distracție alături de prieteni." data-img="platouri-evenimente-majorate-bacau.webp">
+                        <img src="platouri-evenimente-majorate-bacau.webp" alt="Petreceri private, majorate și shot-uri la Spicy Pub Bacău" class="card-img" width="840" height="438" loading="lazy" decoding="async">
                         <span class="card-badge-top">Party &amp; Pub</span>
                         <div class="card-caption">
                             <div class="card-caption-text">
@@ -2425,40 +2440,40 @@
                     </article>
 
                     <!-- Dublură 1 pentru buclă continuă -->
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Evenimente &amp; Majorate Bacău" data-title="Organizare Majorate &amp; Aniversări" data-desc="Sală spațioasă în centrul Bacăului (Str. Banca Națională 25) amenajată festiv pentru majorate, zile de naștere și petreceri private cu meniu personalizat și platouri artizanale." data-img="organizare-evenimente-spicy-bacau.jpg">
-                        <img src="organizare-evenimente-spicy-bacau.jpg" alt="" class="card-img" width="840" height="562" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Evenimente &amp; Majorate Bacău" data-title="Organizare Majorate &amp; Aniversări" data-desc="Sală spațioasă în centrul Bacăului (Str. Banca Națională 25) amenajată festiv pentru majorate, zile de naștere și petreceri private cu meniu personalizat și platouri artizanale." data-img="organizare-evenimente-spicy-bacau.webp">
+                        <img src="organizare-evenimente-spicy-bacau.webp" alt="" class="card-img" width="840" height="562" loading="lazy" decoding="async">
                         <span class="card-badge-top">Majorate &amp; Evenimente</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Organizare Majorate Bacău</h3><p>Sală amenajată festiv pentru petreceri și aniversări</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Petreceri 18 Ani • Bacău" data-title="Decor &amp; Atmosferă de Majorat" data-desc="Transformăm majoratul sau aniversarea ta într-o amintire de neuitat: spațiu pentru foto-corner, sonorizare/DJ, mese festive, platouri calde și reci și servire impecabilă." data-img="mese-festive-aniversari-bacau.jpg">
-                        <img src="mese-festive-aniversari-bacau.jpg" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Petreceri 18 Ani • Bacău" data-title="Decor &amp; Atmosferă de Majorat" data-desc="Transformăm majoratul sau aniversarea ta într-o amintire de neuitat: spațiu pentru foto-corner, sonorizare/DJ, mese festive, platouri calde și reci și servire impecabilă." data-img="mese-festive-aniversari-bacau.webp">
+                        <img src="mese-festive-aniversari-bacau.webp" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">Aniversări &amp; 18 Ani</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Majorate &amp; Zile de Naștere</h3><p>Cadru festiv, sonorizare și meniu personalizat</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Platouri Artizanale • Evenimente" data-title="Platouri Calde și Reci Artizanale" data-desc="Pregătim integral în bucătăria noastră platouri bogate cu aperitive calde și reci, bulete de cașcaval, chifteluțe, rulouri și feluri principale pentru invitații tăi." data-img="petreceri-private-majorate-bacau.jpg">
-                        <img src="petreceri-private-majorate-bacau.jpg" alt="" class="card-img" width="840" height="563" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Platouri Artizanale • Evenimente" data-title="Platouri Calde și Reci Artizanale" data-desc="Pregătim integral în bucătăria noastră platouri bogate cu aperitive calde și reci, bulete de cașcaval, chifteluțe, rulouri și feluri principale pentru invitații tăi." data-img="petreceri-private-majorate-bacau.webp">
+                        <img src="petreceri-private-majorate-bacau.webp" alt="" class="card-img" width="840" height="563" loading="lazy" decoding="async">
                         <span class="card-badge-top">Platouri Artizanale</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Platouri Calde &amp; Reci</h3><p>Aperitive și specialități pregătite integral artizanal</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Mese Festive • Familie &amp; Grupuri" data-title="Mese Festive &amp; Petreceri Private" data-desc="Locul ideal din centrul Bacăului pentru onomastici, botezuri restrânse, banchete, mese în familie sau petreceri corporate cu servire impecabilă." data-img="platouri-calde-reci-evenimente-bacau.jpg">
-                        <img src="platouri-calde-reci-evenimente-bacau.jpg" alt="" class="card-img" width="840" height="560" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Mese Festive • Familie &amp; Grupuri" data-title="Mese Festive &amp; Petreceri Private" data-desc="Locul ideal din centrul Bacăului pentru onomastici, botezuri restrânse, banchete, mese în familie sau petreceri corporate cu servire impecabilă." data-img="platouri-calde-reci-evenimente-bacau.webp">
+                        <img src="platouri-calde-reci-evenimente-bacau.webp" alt="" class="card-img" width="840" height="560" loading="lazy" decoding="async">
                         <span class="card-badge-top">Mese Festive</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Mese Festive &amp; Grupuri</h3><p>Aranjament elegant pentru evenimente în familie</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pub &amp; Party • Bacău" data-title="Petreceri cu Prietenii &amp; Shot-uri" data-desc="Atmosferă autentică de pub și petrecere în inima Bacăului: platouri de shot-uri, bere rece și distracție alături de prieteni." data-img="platouri-evenimente-majorate-bacau.jpg">
-                        <img src="platouri-evenimente-majorate-bacau.jpg" alt="" class="card-img" width="840" height="438" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pub &amp; Party • Bacău" data-title="Petreceri cu Prietenii &amp; Shot-uri" data-desc="Atmosferă autentică de pub și petrecere în inima Bacăului: platouri de shot-uri, bere rece și distracție alături de prieteni." data-img="platouri-evenimente-majorate-bacau.webp">
+                        <img src="platouri-evenimente-majorate-bacau.webp" alt="" class="card-img" width="840" height="438" loading="lazy" decoding="async">
                         <span class="card-badge-top">Party &amp; Pub</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Atmosferă de Party</h3><p>Shot-uri, muzică bună și seri memorabile cu prietenii</p></div>
@@ -2467,40 +2482,40 @@
                     </article>
 
                     <!-- Dublură 2 pentru un scroll continuu foarte lung -->
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Evenimente &amp; Majorate Bacău" data-title="Organizare Majorate &amp; Aniversări" data-desc="Sală spațioasă în centrul Bacăului (Str. Banca Națională 25) amenajată festiv pentru majorate, zile de naștere și petreceri private cu meniu personalizat și platouri artizanale." data-img="organizare-evenimente-spicy-bacau.jpg">
-                        <img src="organizare-evenimente-spicy-bacau.jpg" alt="" class="card-img" width="840" height="562" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Evenimente &amp; Majorate Bacău" data-title="Organizare Majorate &amp; Aniversări" data-desc="Sală spațioasă în centrul Bacăului (Str. Banca Națională 25) amenajată festiv pentru majorate, zile de naștere și petreceri private cu meniu personalizat și platouri artizanale." data-img="organizare-evenimente-spicy-bacau.webp">
+                        <img src="organizare-evenimente-spicy-bacau.webp" alt="" class="card-img" width="840" height="562" loading="lazy" decoding="async">
                         <span class="card-badge-top">Majorate &amp; Evenimente</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Organizare Majorate Bacău</h3><p>Sală amenajată festiv pentru petreceri și aniversări</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Petreceri 18 Ani • Bacău" data-title="Decor &amp; Atmosferă de Majorat" data-desc="Transformăm majoratul sau aniversarea ta într-o amintire de neuitat: spațiu pentru foto-corner, sonorizare/DJ, mese festive, platouri calde și reci și servire impecabilă." data-img="mese-festive-aniversari-bacau.jpg">
-                        <img src="mese-festive-aniversari-bacau.jpg" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Petreceri 18 Ani • Bacău" data-title="Decor &amp; Atmosferă de Majorat" data-desc="Transformăm majoratul sau aniversarea ta într-o amintire de neuitat: spațiu pentru foto-corner, sonorizare/DJ, mese festive, platouri calde și reci și servire impecabilă." data-img="mese-festive-aniversari-bacau.webp">
+                        <img src="mese-festive-aniversari-bacau.webp" alt="" class="card-img" width="840" height="558" loading="lazy" decoding="async">
                         <span class="card-badge-top">Aniversări &amp; 18 Ani</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Majorate &amp; Zile de Naștere</h3><p>Cadru festiv, sonorizare și meniu personalizat</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Platouri Artizanale • Evenimente" data-title="Platouri Calde și Reci Artizanale" data-desc="Pregătim integral în bucătăria noastră platouri bogate cu aperitive calde și reci, bulete de cașcaval, chifteluțe, rulouri și feluri principale pentru invitații tăi." data-img="petreceri-private-majorate-bacau.jpg">
-                        <img src="petreceri-private-majorate-bacau.jpg" alt="" class="card-img" width="840" height="563" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Platouri Artizanale • Evenimente" data-title="Platouri Calde și Reci Artizanale" data-desc="Pregătim integral în bucătăria noastră platouri bogate cu aperitive calde și reci, bulete de cașcaval, chifteluțe, rulouri și feluri principale pentru invitații tăi." data-img="petreceri-private-majorate-bacau.webp">
+                        <img src="petreceri-private-majorate-bacau.webp" alt="" class="card-img" width="840" height="563" loading="lazy" decoding="async">
                         <span class="card-badge-top">Platouri Artizanale</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Platouri Calde &amp; Reci</h3><p>Aperitive și specialități pregătite integral artizanal</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Mese Festive • Familie &amp; Grupuri" data-title="Mese Festive &amp; Petreceri Private" data-desc="Locul ideal din centrul Bacăului pentru onomastici, botezuri restrânse, banchete, mese în familie sau petreceri corporate cu servire impecabilă." data-img="platouri-calde-reci-evenimente-bacau.jpg">
-                        <img src="platouri-calde-reci-evenimente-bacau.jpg" alt="" class="card-img" width="840" height="560" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Mese Festive • Familie &amp; Grupuri" data-title="Mese Festive &amp; Petreceri Private" data-desc="Locul ideal din centrul Bacăului pentru onomastici, botezuri restrânse, banchete, mese în familie sau petreceri corporate cu servire impecabilă." data-img="platouri-calde-reci-evenimente-bacau.webp">
+                        <img src="platouri-calde-reci-evenimente-bacau.webp" alt="" class="card-img" width="840" height="560" loading="lazy" decoding="async">
                         <span class="card-badge-top">Mese Festive</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Mese Festive &amp; Grupuri</h3><p>Aranjament elegant pentru evenimente în familie</p></div>
                             <span class="card-zoom-badge"><svg class="svg-icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
                         </div>
                     </article>
-                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pub &amp; Party • Bacău" data-title="Petreceri cu Prietenii &amp; Shot-uri" data-desc="Atmosferă autentică de pub și petrecere în inima Bacăului: platouri de shot-uri, bere rece și distracție alături de prieteni." data-img="platouri-evenimente-majorate-bacau.jpg">
-                        <img src="platouri-evenimente-majorate-bacau.jpg" alt="" class="card-img" width="840" height="438" loading="lazy" decoding="async">
+                    <article class="card" aria-hidden="true" onclick="openSpotlight(this)" data-category="Pub &amp; Party • Bacău" data-title="Petreceri cu Prietenii &amp; Shot-uri" data-desc="Atmosferă autentică de pub și petrecere în inima Bacăului: platouri de shot-uri, bere rece și distracție alături de prieteni." data-img="platouri-evenimente-majorate-bacau.webp">
+                        <img src="platouri-evenimente-majorate-bacau.webp" alt="" class="card-img" width="840" height="438" loading="lazy" decoding="async">
                         <span class="card-badge-top">Party &amp; Pub</span>
                         <div class="card-caption">
                             <div class="card-caption-text"><h3>Atmosferă de Party</h3><p>Shot-uri, muzică bună și seri memorabile cu prietenii</p></div>
@@ -3035,8 +3050,11 @@
             animFrameId = requestAnimationFrame(animateParticles);
         }
 
-        initParticles();
-        animateParticles();
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(function() { initParticles(); animateParticles(); }, { timeout: 1200 });
+        } else {
+            window.addEventListener('load', function() { setTimeout(function() { initParticles(); animateParticles(); }, 250); });
+        }
 
         document.addEventListener('visibilitychange', () => {
             if (!document.hidden && !animFrameId && !prefersReducedMotion) {
