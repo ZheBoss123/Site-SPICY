@@ -1,0 +1,64 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Restaurant & Pub Spicy Bacău",
+    "identifier": "did:web:spicybacau.ro",
+    "documentationUrl": "https://spicybacau.ro/llms.txt",
+    "logoUrl": "https://spicybacau.ro/logo-restaurant-spicy-bacau.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:spicybacau.ro:capability:menu",
+      "displayName": "Meniu & Preparate Restaurant Spicy Bacău",
+      "type": "text/markdown",
+      "url": "https://spicybacau.ro/llms.txt",
+      "description": "Catalog complet de preparate culinare, pizza cu aluat artizanal, paste italienești, fructe de mare, burgeri, gramaje și prețuri actualizate în RON.",
+      "representativeQueries": [
+        "Care este meniul la Restaurant Spicy Bacău?",
+        "Ce pizza găsesc la Restaurant Spicy Bacău?",
+        "Cât costă pastele carbonara la Spicy Bacău?"
+      ],
+      "tags": [
+        "restaurant",
+        "meniu",
+        "pizza-bacau",
+        "paste",
+        "fructe-de-mare"
+      ]
+    },
+    {
+      "identifier": "urn:air:spicybacau.ro:capability:reservations",
+      "displayName": "Rezervări & Evenimente Spicy Bacău",
+      "type": "text/html",
+      "url": "https://spicybacau.ro/",
+      "description": "Rezervări de mese, petreceri private, majorate (18 ani), aniversări și mese festive în centrul Bacăului (Strada Banca Națională 25). Telefon rezervări: 0751 669 995.",
+      "representativeQueries": [
+        "Cum rezerv o masă la Restaurant Spicy Bacău?",
+        "Organizare majorat sau aniversare în Bacău la Spicy Pub",
+        "Număr de telefon rezervări Spicy Bacău"
+      ],
+      "tags": [
+        "rezervari",
+        "evenimente",
+        "majorate",
+        "pub-bacau"
+      ]
+    },
+    {
+      "identifier": "urn:air:spicybacau.ro:capability:delivery",
+      "displayName": "Comandă Online cu Livrare Glovo",
+      "type": "text/html",
+      "url": "https://glovoapp.com/ro/ro/bacau/stores/spicy-bacau",
+      "description": "Comenzi online de pizza, paste, fructe de mare și burgeri cu livrare rapidă la domiciliu în municipiul Bacău prin aplicația Glovo.",
+      "representativeQueries": [
+        "Comandă mâncare cu livrare la domiciliu Spicy Bacău",
+        "Comandă pizza pe Glovo de la Spicy Bacău"
+      ],
+      "tags": [
+        "livrare",
+        "glovo",
+        "comanda-mancare"
+      ]
+    }
+  ]
+}

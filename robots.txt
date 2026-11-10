@@ -29,3 +29,4 @@ User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://spicybacau.ro/sitemap.xml
+Agentmap: https://spicybacau.ro/ai-catalog.json
